@@ -29,12 +29,12 @@ const BlogItem = ({onDelete ,
             >
             Delete
         </Button>   
-        <Button className="ui primary button" style={{margin:'10px 15px'}} 
+        <Button className="ui green button" style={{margin:'10px 15px'}} 
             onClick={() =>{
                 return console.log(objectId)
             }}
             >
-            Update
+            Update ID
         </Button> 
        </div>
    </div>
