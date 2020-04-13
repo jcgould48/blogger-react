@@ -34,6 +34,10 @@ class  App extends Component {
         console.log('Delete item with id: ', id);
     }
 
+    onUpdate(id){
+        console.log('Update:  ', id)
+    }
+
     handleChange = (event) => {
         this.setState({searchTerm: event.target.value}, ()=>{console.log(this.state.searchTerm)})
         
@@ -77,6 +81,7 @@ searchTerm= {this.state.searchTerm}/>
 blogs={this.state.blogs} 
 searchTerm={this.state.searchTerm} 
 onDelete={this.onDelete}
+onUpdate={this.onUpdate}
 />
 {/* {this.state.blogs
 .filter(searchIt(this.state.searchTerm))

@@ -2,7 +2,7 @@ import React from 'react'
 import Button from './Button'
 
 
-const BlogItem = ({onDelete , 
+const BlogItem = ({onDelete , onUpdate, 
     blog : {title, author, subject, article, objectId}}) =>{
     return (
         <div 
@@ -31,10 +31,10 @@ const BlogItem = ({onDelete ,
         </Button>   
         <Button className="ui green button" style={{margin:'10px 15px'}} 
             onClick={() =>{
-                return console.log(objectId)
+                return onUpdate(objectId)
             }}
             >
-            Update ID
+            Update
         </Button> 
        </div>
    </div>

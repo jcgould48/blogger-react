@@ -9,7 +9,7 @@ const Blogs = (props) => {
 .filter(searchIt(props.searchTerm))
 .map((blog,idx) =>{
     return(
-        <BlogItem key={blog.objectId} onDelete={props.onDelete} blog={blog}/>
+        <BlogItem key={blog.objectId} onDelete={props.onDelete}  onUpdate={props.onUpdate} blog={blog}/>
      
 //         <div key={blog.objectId} className= 'ui card'
 //    style={{width: '75%', padding:'20px'}}
